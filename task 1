@@ -1,0 +1,19 @@
+string = input("Enter your text:")
+choice = input('Enter your choice(1,2):')
+if choice == "1":
+    d = {}
+    for i in string:
+        if i.isalpha():
+            if i in d:
+                d[i] += 1
+            else:
+                d[i] = 1
+    for i in sorted(d):
+        print(i, "=", d[i])
+
+elif choice == "2":
+    n = string.split()
+    m = list(set(n))
+    p = sorted(m)
+    bar = [x for x in p if len(x) > 4]
+    print(bar)
