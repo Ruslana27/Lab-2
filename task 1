@@ -12,8 +12,14 @@ if choice == "1":
         print(i, "=", d[i])
 
 elif choice == "2":
-    n = string.split()
-    m = list(set(n))
-    p = sorted(m)
-    bar = [x for x in p if len(x) > 4]
-    print(bar)
+    no_s=""
+    for letter in string:
+        if letter not in symbols:
+            no_s = no_s+ letter
+    no_s=no_s.split()
+    m = no_s.sort()
+    print("Sorted:")
+    for word in no_s:
+        print(word)
+else:
+    print("Wrong choice")
