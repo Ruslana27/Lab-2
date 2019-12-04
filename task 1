@@ -1,3 +1,4 @@
+symbols = '''`~!@#$%^&*()?\/_-+={}[]:'";<>,.'''
 string = input("Enter your text:")
 choice = input('Enter your choice(1,2):')
 if choice == "1":
